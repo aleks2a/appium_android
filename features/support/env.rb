@@ -10,6 +10,8 @@ DEFAULT_TIMEOUT = 20
 class AppiumWorld
 end
 
+# adb shell "dumpsys window windows | grep -E 'mCurrentFocus|mFocusedApp'"
+
 def caps
   { caps:       { deviceName: (ENV['DEVICE'] || "Nexus 4"),
                   platformName: 'Android',
@@ -28,3 +30,17 @@ Appium.promote_appium_methods AppiumWorld
 World do
   AppiumWorld.new
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,12 +3,10 @@ require 'appium_lib'
 require 'rspec'
 require 'pry'
 
+require_relative 'screen_actions'
+
 APP_PATH = ENV['APP'] ||  File.join(File.dirname(__FILE__), "..", "..", "app-alpha-debug.apk")
 DEFAULT_TIMEOUT = 20
-
-
-class AppiumWorld
-end
 
 # adb shell "dumpsys window windows | grep -E 'mCurrentFocus|mFocusedApp'"
 
@@ -24,11 +22,10 @@ def caps
 end
 
 Appium::Driver.new(caps)
-Appium.promote_appium_methods AppiumWorld
-
+Appium.promote_appium_methods ScreenActions
 
 World do
-  AppiumWorld.new
+  Wikipedia.new
 end
 
 

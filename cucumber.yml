@@ -1,1 +1,5 @@
 search: --tags @search --tags ~@no_run
+
+login: --tags @login
+
+swipe: --tags @swipe

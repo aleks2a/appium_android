@@ -1,4 +1,5 @@
 class ArticleScreen < ScreenActions
+
   def search_bar
     find_element(id: "main_search_bar_text")
   end
@@ -10,4 +11,9 @@ class ArticleScreen < ScreenActions
   def article_title
     find_elements(id: "page_list_item_title")
   end
+
+  def navigation_menu_icon
+    find_element(name: "Wikipedia Alpha")
+  end
+
 end

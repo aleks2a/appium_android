@@ -8,4 +8,8 @@ class NavigationMenuScreen < ScreenActions
     find_element(id: "nav_account_text")
   end
 
+  def log_out_button
+    find_element(name: "Log out")
+  end
+
 end

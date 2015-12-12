@@ -27,6 +27,16 @@ end
 
 And(/^I press on Log in button$/) do
   login_screen.login_button.click
+  sleep 3
 end
 
+
+Then(/^I should see "([^"]*)" in log in section$/) do |user_name|
+  expect(navigation_menu_screen.account_text.text).to be == user_name
+end
+
+
+Then(/^I press Log out button$/) do
+  navigation_menu_screen.log_out_button.click
+end
 

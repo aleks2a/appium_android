@@ -40,3 +40,23 @@ Then(/^I press Log out button$/) do
   navigation_menu_screen.log_out_button.click
 end
 
+
+Then(/^Log in button should be disabled$/) do
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

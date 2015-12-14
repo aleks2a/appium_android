@@ -2,4 +2,4 @@ search: --tags @search --tags ~@no_run
 
 login: --tags @login
 
-swipe: --tags @swipe
+swipe: --format html --out report.html  --format pretty --tags @swipe

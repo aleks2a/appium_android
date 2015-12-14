@@ -11,3 +11,30 @@ Then(/^I should( not)? see Navigation menu$/) do |option|
    expect(navigation_menu_screen.navigation_menu_exists?).to be == false
   end
 end
+
+Then(/^I turn Airplane mode (on|off)$/) do |value|
+  screen_actions.turn_airplane_mode value
+end
+
+
+Then(/^I should see internet connection error$/) do
+  expect(login_screen.connection_error.text).to be == "Cannot connect to the Internet. "
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

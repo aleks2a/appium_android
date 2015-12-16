@@ -1,0 +1,4 @@
+.bundle/
+.idea/
+Gemfile.lock
+report.html

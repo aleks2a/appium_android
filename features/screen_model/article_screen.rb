@@ -16,4 +16,19 @@ class ArticleScreen < ScreenActions
     find_element(name: "Wikipedia Alpha")
   end
 
+  def floating_button
+    id("floating_toc_button")
+  end
+
+  def floating_button_exists?
+    exists{floating_button}
+  end
+
+  def wait_for_flt_button_disappear seconds
+    seconds.to_i.times do
+      break unless floating_button_exists?
+      sleep 1
+    end
+  end
+
 end

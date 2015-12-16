@@ -22,19 +22,11 @@ Then(/^I should see internet connection error$/) do
 end
 
 
+Then(/^I scroll to "([^"]*)"$/) do |text|
+  screen_actions.scroll_to text
+end
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Then(/^I tap on "([^"]*)"$/) do |text|
+  article_screen.wait_for_flt_button_disappear 5
+  screen_actions.tap_on_first_element text
+end

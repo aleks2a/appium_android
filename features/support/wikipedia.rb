@@ -20,6 +20,9 @@ class Wikipedia
     @login_screen ||= LoginScreen.new
   end
 
+  def link_preview
+    @link_preview ||= LinkPreview.new
+  end
 end
 
 

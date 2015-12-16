@@ -1,5 +1,7 @@
-search: --tags @search --tags ~@no_run
+<% standart_opts = "--format html --out report.html --format pretty --tags ~@wip" %>
+search: <%= standart_opts %> --tags @search
 
-login: --tags @login
+login: <%= standart_opts %> --tags @login
 
-swipe: --format html --out report.html  --format pretty --tags @swipe
+swipe: <%= standart_opts %> --tags @swipe
+preview: <%= standart_opts %> --tags @preview

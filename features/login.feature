@@ -7,6 +7,7 @@ Feature: Wikipedia login
     And I land on Login screen
     Then I type "Aleksskela" to login field
     Then I type "root1234" to password field
+    Then Log in button should be enabled
     And I press on Log in button
     When I swipe screen to the right direction
     Then I should see "Aleksskela" in log in section
@@ -26,6 +27,7 @@ Feature: Wikipedia login
     And I press on Log in button
     Then I should see internet connection error
     Then I turn Airplane mode off
+
   @login
   Scenario: Log in button should be disabled before user type credentials
     Given I land on Today's featured article

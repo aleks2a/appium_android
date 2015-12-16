@@ -18,7 +18,7 @@ end
 
 
 Then(/^I should see internet connection error$/) do
-  expect(login_screen.connection_error.text).to be == "Cannot connect to the Internet. "
+  expect(login_screen.connection_error.text).to be == "Cannot connect to the Internet."
 end
 
 

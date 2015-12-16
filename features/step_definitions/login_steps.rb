@@ -41,8 +41,13 @@ Then(/^I press Log out button$/) do
 end
 
 
-Then(/^Log in button should be disabled$/) do
-
+Then(/^Log in button should be (enabled|disabled)$/) do |state|
+  actual_state = login_screen.login_button.enabled?
+  if state == "enabled"
+    expect(actual_state).to eql true
+  else
+    expect(actual_state).to eql false
+  end
 end
 
 

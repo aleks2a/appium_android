@@ -1,6 +1,6 @@
 Before do
   $driver.start_driver
-  #driver.set_network_connection 6
+  # $driver.set_network_connection 6
 end
 
 After do |scenario|

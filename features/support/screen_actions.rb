@@ -12,12 +12,7 @@ class ScreenActions
   def turn_airplane_mode value
     toggle_airplane_mode if value == "on"
     set_network_connection(6) if value == "off"
-
   end
-
-
-
-
 
 
 end

@@ -13,3 +13,5 @@ Feature: Article preview
   Scenario: User can save Article from Preview page
 
   Scenario: User can save Article from Article page ( use adb keyevent for menu)
+    When I search for "Metallica" article
+    And I open menu

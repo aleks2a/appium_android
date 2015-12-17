@@ -30,3 +30,7 @@ Then(/^I tap on "([^"]*)"$/) do |text|
   article_screen.wait_for_flt_button_disappear 5
   screen_actions.tap_on_first_element text
 end
+
+And(/^I open menu$/) do
+  screen_actions.android_menu
+end

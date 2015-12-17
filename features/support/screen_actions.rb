@@ -28,4 +28,8 @@ class ScreenActions
     find_elements(:name, text).first.click
   end
 
+  def android_menu
+    system "adb shell input keyevent 82"
+  end
+
 end

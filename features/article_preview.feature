@@ -8,10 +8,10 @@ Feature: Article preview
     Then I tap on Continue To Article button
     And I verify that article contains "Master of Puppets"
 
-  Scenario: Verify that Article Title and Summary text containing Article name
-
-  Scenario: User can save Article from Preview page
-
   Scenario: User can save Article from Article page ( use adb keyevent for menu)
     When I search for "Metallica" article
     And I open menu
+
+  Scenario: Verify that Article Title and Summary text containing Article name
+
+  Scenario: User can save Article from Preview page

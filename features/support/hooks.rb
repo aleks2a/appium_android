@@ -1,6 +1,11 @@
 Before do
   $driver.start_driver
-  # $driver.set_network_connection 6
+
+  if $driver.get_network_connection != 6
+    $driver.set_network_connection 6
+    sleep 2
+  end
+
 end
 
 After do |scenario|

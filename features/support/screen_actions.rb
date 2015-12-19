@@ -29,7 +29,8 @@ class ScreenActions
   end
 
   def android_menu
-    system "adb shell input keyevent 82"
+    # system "adb shell input keyevent 82"
+    press_keycode "82"
   end
 
 end

@@ -12,6 +12,6 @@ Feature: Article preview
     When I search for "Metallica" article
     And I open menu
 
-  Scenario: Verify that Article Title and Summary text containing Article name
+#  Scenario: User can save Article from Preview page
 
-  Scenario: User can save Article from Preview page
+#  Scenario: Verify that Article Title and Summary text containing Article name

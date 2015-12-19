@@ -1,3 +1,4 @@
+@login
 Feature: Wikipedia login
 
   Scenario: User able to login with valid credentials
@@ -28,7 +29,6 @@ Feature: Wikipedia login
     Then I should see internet connection error
     Then I turn Airplane mode off
 
-  @login
   Scenario: Log in button should be disabled before user type credentials
     Given I land on Today's featured article
     Then I press Navigation menu icon
